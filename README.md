@@ -41,8 +41,9 @@ It is used by the linker to patch relocations without performing full ELF linkin
 ```txt
 # main
 boot = 0x8006743C
-idle = 080067284
+idle = 0x80067284
 
 # utility
 func_80065984 = 0x80065984
+
 ```
