@@ -2,11 +2,13 @@
 
 Custom lightweight linker designed for the **Yoshi’s Story (Nintendo 64) decompilation project**.
 
-The Y64 Linker resolves relocations directly from MIPS ELF object files and produces raw `.text` binary blobs, **without generating a full ELF executable**.
-
-This tool is intentionally minimal and focused: it only implements what is required for N64 MIPS code linking.
-
 ---
+
+## 🔎 Overview
+
+`y64_linker` is a lightweight **MIPS64 ELF section linker and relocation resolver**. 
+
+Standard `objcopy` cannot resolve relocations when extracting binary sections, forcing developers to write complex linker scripts. `y64_linker` bridges this gap by reading unlinked or partially linked MIPS ELF object files, resolving relocations directly against a symbol address file, and outputting ready-to-inject `.text` binary blobs.
 
 ## ✨ Features
 
