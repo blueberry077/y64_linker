@@ -1,6 +1,6 @@
-# y64_linker - MIPS64 ELF relocation resolver & section
+# y64_linker - MIPS64 ELF relocation resolver & section extraction
 
-`y64_linker` (Yoshi64 Linker) is a lightweight **MIPS64 ELF section linker and relocation resolver**. 
+`y64_linker` (Yoshi64 Linker) is a lightweight **MIPS64 ELF section extractor and relocation resolver**. 
 
 Standard `objcopy` cannot resolve relocations when extracting binary sections, forcing developers to write complex linker scripts. `y64_linker` bridges this gap by reading unlinked or partially linked MIPS ELF object files, resolving relocations directly against a symbol address file, and outputting ready-to-inject `.text` binary blobs.
 
